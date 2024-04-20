@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCollCell" id="gTV-IL-0wX" customClass="ImageCollCell" customModule="PrashantAcharyaDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="253"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="317" height="253"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSW-Dt-8b2">
+                        <rect key="frame" x="0.0" y="0.0" width="317" height="253"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LazyImageView" translatesAutoresizingMaskIntoConstraints="NO" id="baT-ck-CHW" customClass="LazyImageView" customModule="PrashantAcharyaDemo" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="301" height="237"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="baT-ck-CHW" firstAttribute="leading" secondItem="zSW-Dt-8b2" secondAttribute="leading" constant="8" id="1Y6-oM-apM"/>
+                            <constraint firstItem="baT-ck-CHW" firstAttribute="top" secondItem="zSW-Dt-8b2" secondAttribute="top" constant="8" id="KGb-0c-vtq"/>
+                            <constraint firstAttribute="bottom" secondItem="baT-ck-CHW" secondAttribute="bottom" constant="8" id="dWX-wa-85K"/>
+                            <constraint firstAttribute="trailing" secondItem="baT-ck-CHW" secondAttribute="trailing" constant="8" id="pfK-PN-uBg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="zSW-Dt-8b2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="b6t-6N-1yj"/>
+                <constraint firstAttribute="trailing" secondItem="zSW-Dt-8b2" secondAttribute="trailing" id="cFk-n9-5wk"/>
+                <constraint firstItem="zSW-Dt-8b2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sac-it-Tof"/>
+                <constraint firstAttribute="bottom" secondItem="zSW-Dt-8b2" secondAttribute="bottom" id="y2F-xO-Xw5"/>
+            </constraints>
+            <size key="customSize" width="317" height="253"/>
+            <connections>
+                <outlet property="img" destination="baT-ck-CHW" id="2Af-vQ-8CF"/>
+            </connections>
+            <point key="canvasLocation" x="55.725190839694655" y="59.507042253521128"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="LazyImageView" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
