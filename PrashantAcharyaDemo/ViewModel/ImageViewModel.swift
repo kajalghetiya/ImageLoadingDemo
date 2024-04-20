@@ -15,13 +15,10 @@ class ImageViewModel {
         loderBlock(true)
                 ApiManager.sharedInstance.sendRequestToServer(apiURL: apiUrl , httpMethod: HttpMethod.get) { response, error in
                     loderBlock(false)
-                    
-                        // logic
                     if response != nil {
                         self.arrImages = response
                     }
                     completionBlock("",true)
-                    print(response)
                 }
     }
     

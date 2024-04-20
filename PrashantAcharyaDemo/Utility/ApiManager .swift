@@ -46,7 +46,6 @@ class ApiManager: NSObject {
                 }
                 let decoder = JSONDecoder()
                 let decodedData = try? decoder.decode([ImageModel].self, from: data!)
-                print(decodedData)
                 completionHandler(decodedData,nil)
             }.resume()
         }
